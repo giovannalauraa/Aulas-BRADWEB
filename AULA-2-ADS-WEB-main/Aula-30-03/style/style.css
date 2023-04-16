@@ -1,0 +1,32 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    background-color: gray;
+}
+
+/* Seleção por classe (começa com . ) */
+/* .item_menu{
+    display: inline;
+} */
+
+/*Seleção por id (começa com # )*/
+#titulo-home{
+    color: rgb(255, 255, 255);
+}
+
+/*Somente funciona se o link for mencionado no index*/
+a[href="./index.html"]{
+    color: rgb(255, 255, 255);
+}
+
+/*Seleção com combinador*/
+.menu > li {
+    display: inline;
+}
+
+.menu a:hover{
+    color: rgb(0, 0, 0);
+}
