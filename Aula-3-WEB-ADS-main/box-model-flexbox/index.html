@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exemplo</title>
+    <style>
+        span {
+            background-color: darkblue;
+            color: chartreuse;
+        }
+        /* Selecionar elementos da classe box */
+        .box{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            /*margin -> aplicavél em el. block*/
+            margin: 0 auto;
+            /*text-align -> aplicavél em el. inline*/
+            text-align: center;           
+            /* Adicionando padding */
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            /* Adicionando border */
+            border-top: 5px solid greenyellow;
+            border-bottom: 5px solid greenyellow;
+
+            /* Adicionando Margem*/
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            /* Centraliza na horizontal  e 
+               Vertical */
+            display: grid;
+            place-content: center;
+        }
+
+        .border-box{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>Conteúdo</span>
+    </div>
+
+    <div class="box border-box">
+        <span>Com Border Box</span>
+    </div>
+</body>
+</html>

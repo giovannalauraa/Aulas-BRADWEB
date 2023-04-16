@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Flexbox</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .container{
+            width: 70%;
+            margin: 0 auto 0 auto;
+            background-color: aqua;
+        }
+
+        .flexbase{
+            width: 400px;
+            height: 150px;
+            background-color: cornflowerblue;
+            margin: 0 auto;
+            /*Ativando flexbox numa div*/
+            display: flex;
+            /* align-items: center; flex-start, flex-end */
+            align-items: center;
+            /* justify-content: center; flex-start, flex-end */
+            /* Adiciona espaço: space-around, space-between, space-evenly */
+           
+        }
+
+        .flexbase > span {
+            background-color: coral;
+            border-radius: 5px;
+        }
+
+        .flex1{
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+
+        .flex2{
+            justify-content: space-evenly;
+        }
+
+        /* Seleciona o 1º span
+          que é filho de .flex2  */
+        .flex2 span:nth-of-type(1){
+            background-color: red;
+            /* alinhamento individual em 
+                relação ao eixo 
+                principal */
+            align-self: flex-start;
+            order: 3;
+        }
+
+        /* Seleciona o segundo span */
+        .flex2 span:nth-of-type(2){
+            background-color: rgb(247, 150, 5);
+            align-self: flex-end;
+            order: 3;
+        }
+
+        .flex3{
+            justify-content: space-between;
+            margin-top: 20px;
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+        }
+
+        .flex3 span{
+            flex-basis: 120px;
+        }
+
+        .flex3 span:nth-of-type(1){
+            background-color: blueviolet;
+            flex-shrink: 1;
+        }
+
+        .flex3 span:nth-of-type(2){
+            background-color: crimson;
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- VsCode Emmet -->
+        <!-- table>(tr>td*2)*10 -->
+        <div class="flexbase flex1">
+            <span>Texto 1</span>
+            <span>Texto 2</span>
+            <span>Texto 3</span>
+            <span>Texto 4</span>
+        </div>
+
+        <div class="flexbase flex2">
+            <span>Texto 1</span>
+            <span>Texto 2</span>
+            <span>Texto 3</span>
+            <span>Texto 4</span>
+        </div>
+
+        <div class="flexbase flex3">
+            <span>Texto 1</span>
+            <span>Texto 2</span>
+            <span>Texto 3</span>
+            <span>Texto 4</span>
+            <span>Texto 5</span>
+        </div>
+    </div>
+</body>
+</html>
