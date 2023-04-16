@@ -1,10 +1,11 @@
 # Aulas-BRADWEB
     Repositório criado para armazenar os códigos gerados das aulas de BRADWEB
-    
-    Notas:
-    # AULA-2-ADS-WEB
 
-### CSS
+### Notas:
+
+    AULA-2-ADS-WEB
+    
+    CSS
     Seletor {
     propriedade:valor;
     propriedade:valor;
